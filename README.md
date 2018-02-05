@@ -1,4 +1,4 @@
-# LVL Studio - C# Developer Exam
+# LVL Studio - Javascript Developer Exam
 
 Greetings to you, fearless developer!
 
