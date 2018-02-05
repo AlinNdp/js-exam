@@ -22,16 +22,16 @@ git clone https://github.com/lvlstudio/js-exam.git js-exam
 git checkout -b exam
 ```
 
-- D'accord, ce code est absolument *horrible*. Oui, je l'ai écrit, mais seulement après avoir complètement recâblé mes neurones pour arriver à créer une telle horreur. Ne t'attends pas à trouver quoi que ce soit qui ressemble de près ou de loin à ça dans notre code, ici à LVL! ;)
+- D'accord, ce code est absolument *horrible*. Oui, je l'ai écrit, mais seulement après avoir complètement recâblé mes neurones pour arriver à créer une telle horreur. Ne t'attends pas à trouver quoi que ce soit qui ressemble de près ou de loin à ça dans notre code, ici à LVL ! ;)
 - Le présent document est un fichier `LISEZMOI.md` situé dans le répertoire racine du dépôt. Réponds aux questions directement dans ce fichier, sauf pour celles qui nécessitent de modifier le code.
 - Lorsque tu auras fini l'examen, assure-toi que tous tes changements ont été committés localement, archive tout ton répertoire de travail `js-exam` dans un fichier `exam.zip` et envoie-nous le.
 
 
-- Ça y est! Merci d'avoir pris le temps, tu peux maintenant souffler. Nous réviserons ton examen et te contacterons dès que nous le pourrons!
+- Ça y est! Merci d'avoir pris le temps, tu peux maintenant souffler. Nous réviserons ton examen et te contacterons dès que nous le pourrons !
 
 ## Question 1
 
-Que diable ce programme fait-il?
+Que diable ce programme fait-il ?
 
 ### Réponse
 
@@ -39,7 +39,7 @@ Que diable ce programme fait-il?
 
 ## Question 2
 
-Quelles problématiques (ou y en a-t-il vraiment?!?) peux-tu voir dans ce code? Ordonne-les, de "plus apocalyptiques" à "un peu moins débiles".
+Quelles problématiques (ou y en a-t-il vraiment ?!?) peux-tu voir dans ce code ? Ordonne-les, de "plus apocalyptiques" à "un peu moins débiles".
 
 ### Réponse
 
@@ -50,14 +50,14 @@ Quelles problématiques (ou y en a-t-il vraiment?!?) peux-tu voir dans ce code? 
 
 ## Question 3
 
-Refactorise le code pour régler la plupart des problématiques que tu as identifiées à la question précédente (ou, s'il n'y en avait aucune, tu peux sauter cette question… et la prochaine!)
+Refactorise le code pour régler la plupart des problématiques que tu as identifiées à la question précédente (ou, s'il n'y en avait aucune, tu peux sauter cette question !)
 
 - Le code utilise un API REST avec des données bidon, situé à `http://jsonplaceholder.typicode.com/`. Jette-y un coup d'oeil, pour mieux comprendre l'API, car tu peux utiliser n'importe lequel de ses points de terminaison (endpoints).
 - Tu peux faire *tout* ce que tu veux avec ce code, comme s'il s'agissait d'un vrai projet auquel tu étais assigné.
 
 ## Commentaires (optionnels)
 
-As-tu des commentaires à propos de cet examen ou quoi que ce soit d'autre que tu souhaiterais mentionner?
+As-tu des commentaires à propos de cet examen ou quoi que ce soit d'autre que tu souhaiterais mentionner ?
 
 ### Réponse
 

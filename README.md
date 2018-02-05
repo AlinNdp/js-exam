@@ -48,7 +48,7 @@ What issues (if any?!?) do you see in that code? Order them from "most apocalypt
 
 ## Question 3
 
-Refactor the code to address most issues you identified in previous question (or, if there weren't any, you may just skip this question… and the next!)
+Refactor the code to address most issues you identified in previous question (or, if there weren't any, you may just skip this question!)
 
 - The code uses a REST API with dummy data, located at `http://jsonplaceholder.typicode.com/`. You may want to have a look at that site to help you understand the API, as you may use any of its endpoints.
 - You can do *anything* with that code, as if it were a real project you were assigned to.
