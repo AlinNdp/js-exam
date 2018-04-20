@@ -55,6 +55,17 @@ Refactorise le code pour régler la plupart des problématiques que tu as identi
 - Le code utilise un API REST avec des données bidon, situé à `http://jsonplaceholder.typicode.com/`. Jette-y un coup d'oeil, pour mieux comprendre l'API, car tu peux utiliser n'importe lequel de ses points de terminaison (endpoints).
 - Tu peux faire *tout* ce que tu veux avec ce code, comme s'il s'agissait d'un vrai projet auquel tu étais assigné.
 
+## Question 4
+
+Applique les styles requis pour le dialog dans la page:
+
+- Arrière plan (overlay) blanc, 0.6 d'opacité
+- Des bordures de 4 pixels et 15 pixels de padding
+- Centré à la fois verticallement et horizontallement
+- En comptant la bordure et le padding, prend 35% de la largeur de la page, mais pas moins de 400px de largeur.
+- Si l'écran fait moins de 400px en largeur, le dialogue devrait alors prendre 100% de la largeur.
+- Ne considérez pas la hauteur.
+
 ## Commentaires (optionnels)
 
 As-tu des commentaires à propos de cet examen ou quoi que ce soit d'autre que tu souhaiterais mentionner ?

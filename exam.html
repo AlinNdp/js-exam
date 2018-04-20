@@ -1,63 +1,68 @@
 <html>
 
+<body>
+<h1>An awesome test</h1>
+<p>Some other lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget mollis mi. Pellentesque egestas content.</p>
+<div class="dialog-overlay">
+<div class="dialog" role="dialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+<h2 id="dialogTitle">A great dialog</h2>
 <script>
-    
-var words = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-var posts = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    words = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    posts = new Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
-document.write("Loading data");
-document.write("<br>");
+    document.write("Loading data");
+    document.write("<br>");
 
-for (var i = 1; i <= 100; i++)
-{
-    var req = new XMLHttpRequest();
-    req.open("GET", "http://jsonplaceholder.typicode.com/posts/" + i, false);
-    req.send();
-    var s = req.responseText;    
+    for (var i = 1; i <= 100; i++) {
+        req = new XMLHttpRequest();
+        req.open("GET", "http://jsonplaceholder.typicode.com/posts/" + i, false);
+        req.send();
+        s = req.responseText;
 
-    var j = s.indexOf("\"userId\": ");
-    var k = s.indexOf(",", j + 10);	
-    
-    var id = parseInt(s.substring(j + 10, k));
-    
-    j = s.indexOf("\"body\": ");
-    k = s.indexOf("\"", j + 9);
-    var body = s.substring(j + 9, k);
+        j = s.indexOf("\"userId\": ");
+        k = s.indexOf(",", j + 10);
 
-    var w = 0;
-    j = -1;
-    while (true)
-    {
-        j = body.indexOf(" ", j + 1);
-        w++;
-        if (j == -1)
-            break;
+        id = parseInt(s.substring(j + 10, k));
+
+        j = s.indexOf("\"body\": ");
+        k = s.indexOf("\"", j + 9);
+        var body = s.substring(j + 9, k);
+
+        w = 0;
+        j = -1;
+        while (true) {
+            j = body.indexOf(" ", j + 1);
+            w++;
+            if (j == -1)
+                break;
+        }
+        words[id - 1] += parseInt(w);
+        posts[id - 1]++;
+
+        document.write(".");
     }
-    words[id - 1] += parseInt(w);
-    posts[id - 1]++;
 
-    document.write(".");
-}
+    for (i = 1; i <= 10; i++) {
+        req = new XMLHttpRequest();
+        req.open("GET", "http://jsonplaceholder.typicode.com/users/" + i, false);
+        req.send();
+        s = req.responseText;
 
-for (var i = 1; i <= 10; i++)
-{
-    var req = new XMLHttpRequest();
-    req.open("GET", "http://jsonplaceholder.typicode.com/users/" + i, false);
-    req.send();
-    var s = req.responseText;    
+        j = s.indexOf("\"id\": ");
+        k = s.indexOf(",", j);
+        id = parseInt(s.substring(j + 6, k));
 
-    var j = s.indexOf("\"id\": ");
-    var k = s.indexOf(",", j);
-    var id = parseInt(s.substring(j + 6, k));
-    
-    j = s.indexOf("\"name\": ");
-    k = s.indexOf("\"", j + 9);
-    var name = s.substring(j + 9, k);
+        j = s.indexOf("\"name\": ");
+        k = s.indexOf("\"", j + 9);
+        name = s.substring(j + 9, k);
 
-	document.write("<br>");
-    document.write(name + ": " + words[id - 1] / posts[id - 1]);
-}
-      
+        document.write("<br>");
+        document.write(name + ": " + words[id - 1] / posts[id - 1]);
+    }
+
 </script>
-
+<br />
+<button>Close</button>
+</div>
+</div>
 <html>

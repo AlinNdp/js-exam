@@ -53,6 +53,17 @@ Refactor the code to address most issues you identified in previous question (or
 - The code uses a REST API with dummy data, located at `http://jsonplaceholder.typicode.com/`. You may want to have a look at that site to help you understand the API, as you may use any of its endpoints.
 - You can do *anything* with that code, as if it were a real project you were assigned to.
 
+## Question 3
+
+Please style the modal dialog inside the page
+
+- White 0.6 opacity overlay
+- 4 pixels border and 15 pixels of padding
+- Centered, both vertically and horizontally in the viewport
+- Including the border and padding, takes 35% of the available viewport width, but no less than 400px width.
+- If the screen is smaller than 400px horizontally, the modal should now take 100% of the viewport width.
+- Don’t care about the height: it’s expected to adjust itself and to be small enough for any screens.
+
 ## Comments (optional)
 
 Do you have any comments on this exam or anything else you would like to mention?
